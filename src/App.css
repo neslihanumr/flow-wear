@@ -1,0 +1,70 @@
+html, body {
+  overflow-x: hidden;
+  padding-top: 28px;
+}
+.scroll-container {
+    display: flex;
+    overflow: hidden; 
+    white-space: nowrap; 
+  }
+  
+  .scroll-content {
+    display: inline-flex;
+    gap: 140px;
+    animation: scroll 25s linear infinite;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 45px;
+    
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(calc(-100% + 20px));
+    }
+  }
+  .hidden-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slide-enter {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .slide-enter-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+  .slide-exit {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .slide-exit-active {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+  }
+/* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
