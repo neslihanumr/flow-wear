@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 ![image alt](https://github.com/neslihanumr/flow-wear/blob/c6cf29cb9efce29e9f2ecaa85786c168658a1d02/home-page.png)
 ![image alt](https://github.com/neslihanumr/flow-wear/blob/5f9445e7409e93b36735fafd95e29cb4ea81fcfd/product-page.png)
+![image alt](https://github.com/neslihanumr/flow-wear/blob/de08446f51a4ebaf144f7b02f222fd71eefa648d/cart.png)
